@@ -16,6 +16,7 @@ export default EmberObject.extend(PortMixin, {
 
   /* eslint-disable ember/no-side-effects */
   adapter: computed('namespace.owner', function() {
+    debugger;
     const owner = this.get('namespace.owner');
 
     // dataAdapter:main is deprecated
